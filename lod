@@ -1,0 +1,3 @@
+ with alive_bar(len(wallets)) as bar:
+        for wallet in wallets:
+            chains = chains.union(get_used_chains(node_process, session, wallet))
